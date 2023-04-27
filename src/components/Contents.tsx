@@ -1,10 +1,19 @@
 import React from "react";
+import { Todo } from "../ts/Todo";
 
-export default function Contents() {
+interface Props {
+  todo: Todo;
+}
+
+export default function Contents({ todo }: Props) {
+  const { id, contents, completed = false } = todo;
   return (
     <>
-      <li key="id" className="flex place-content-between ml-2">
-        <label className="m-auto">Content</label>
+      <li
+        key={todo.id}
+        className="flex place-content-between ml-2 border-gray border-b mb-5"
+      >
+        <label className="m-auto">{contents}</label>
         <input
           className="listItemInput text-sm text-center p-1 m-auto w-3/4 hidden"
           type="text"
