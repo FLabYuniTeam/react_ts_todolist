@@ -2764,6 +2764,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.194":
+  version: 4.14.194
+  resolution: "@types/lodash@npm:4.14.194"
+  checksum: 113f34831c461469d91feca2dde737f88487732898b4d25e9eb23b087bb193985f864d1e1e0f3b777edc5022e460443588b6000a3b2348c966f72d17eedc35ea
+  languageName: node
+  linkType: hard
+
 "@types/mime@npm:*":
   version: 3.0.1
   resolution: "@types/mime@npm:3.0.1"
@@ -10591,6 +10598,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-script@npm:latest":
+  version: 2.0.5
+  resolution: "react-script@npm:2.0.5"
+  checksum: 8260b8739ed6b5f873c8ff46abc92a5f0db2f3a7b838031ce5e09a02b4d20f98897864ebe981eed286d7f69da5021d77d0fafea265aefa2767f13b7312b2caae
+  languageName: node
+  linkType: hard
+
 "react-scripts@npm:5.0.1":
   version: 5.0.1
   resolution: "react-scripts@npm:5.0.1"
@@ -10675,11 +10689,14 @@ __metadata:
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
     "@types/jest": ^29.5.1
+    "@types/lodash": ^4.14.194
     "@types/node": ^18.16.0
     "@types/react": ^18.2.0
     "@types/react-dom": ^18.2.0
+    lodash: ^4.17.21
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-script: latest
     react-scripts: 5.0.1
     tailwindcss: ^3.3.1
     typescript: ^5.0.4

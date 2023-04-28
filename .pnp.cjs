@@ -32,11 +32,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:13.5.0"],\
             ["@types/jest", "npm:29.5.1"],\
+            ["@types/lodash", "npm:4.14.194"],\
             ["@types/node", "npm:18.16.0"],\
             ["@types/react", "npm:18.2.0"],\
             ["@types/react-dom", "npm:18.2.0"],\
+            ["lodash", "npm:4.17.21"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:18.2.0"],\
+            ["react-script", "npm:2.0.5"],\
             ["react-scripts", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:5.0.1"],\
             ["tailwindcss", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:3.3.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
@@ -4500,6 +4503,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-json5-npm-0.0.29-f63a7916bd-e60b153664.zip/node_modules/@types/json5/",\
           "packageDependencies": [\
             ["@types/json5", "npm:0.0.29"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/lodash", [\
+        ["npm:4.14.194", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.194-f099c0742e-113f34831c.zip/node_modules/@types/lodash/",\
+          "packageDependencies": [\
+            ["@types/lodash", "npm:4.14.194"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14665,6 +14677,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-script", [\
+        ["npm:2.0.5", {\
+          "packageLocation": "./.yarn/cache/react-script-npm-2.0.5-74a981959f-8260b8739e.zip/node_modules/react-script/",\
+          "packageDependencies": [\
+            ["react-script", "npm:2.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-scripts", [\
         ["npm:5.0.1", {\
           "packageLocation": "./.yarn/cache/react-scripts-npm-5.0.1-d06bd2d5ad-92afa2f245.zip/node_modules/react-scripts/",\
@@ -14752,11 +14773,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:13.5.0"],\
             ["@types/jest", "npm:29.5.1"],\
+            ["@types/lodash", "npm:4.14.194"],\
             ["@types/node", "npm:18.16.0"],\
             ["@types/react", "npm:18.2.0"],\
             ["@types/react-dom", "npm:18.2.0"],\
+            ["lodash", "npm:4.17.21"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:18.2.0"],\
+            ["react-script", "npm:2.0.5"],\
             ["react-scripts", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:5.0.1"],\
             ["tailwindcss", "virtual:9ed06bc891ce667c5defc82adb3d95ecc6d27096b894ce9e7d865877285ebc0be75635d35784e5170be8284fc799279243a1d69228255c9c3e8a4206f52302d6#npm:3.3.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"],\
