@@ -1,8 +1,13 @@
 export default function todoReducer(todos, action) {
   switch (action.type) {
     case "added": {
-      const { id, contents, completed } = action;
-      return [...todos, { id, contents, completed }];
+      const { id, content, completed } = action;
+      return [...todos, { id, content, completed }];
+    }
+
+    case "deleted": {
+      const { id } = action;
+      return todos.filter((todo) => todo.id !== action.id);
     }
 
     default: {
