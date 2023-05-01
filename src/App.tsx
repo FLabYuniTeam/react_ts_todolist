@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import Contents from "./components/Contents";
 import { Todo } from "./ts/Todo";
+import { initialState, reducer } from "./reducer/reducer";
 
 export default function App() {
-  const [todos, setTodos] = useState<Todo[]>([]);
-  const [dones, setDones] = useState<Todo[]>([]);
+  const [{ todos, dones }, dispatch] = useReducer(reducer, initialState);
 
   const [content, setContent] = useState("");
 
@@ -19,45 +19,25 @@ export default function App() {
         content: content,
         completed: false
       };
-      setTodos([...todos, newTodo]);
+      dispatch({ type: "ADD_TODO", payload: newTodo });
       setContent("");
     }
   };
 
   const handleDelete = (id: number) => {
-    setTodos(todos.filter((todo) => todo.id !== id));
-    setDones(dones.filter((done) => done.id !== id));
+    dispatch({ type: "DELETE_TODO", payload: id });
   };
 
   const handleComplete = (id: number) => {
-    const completedTodo = todos.find((todo) => todo.id === id);
-    if (completedTodo) {
-      const updatedTodos = todos.filter((todo) => todo.id !== id);
-      completedTodo.completed = true;
-      setTodos(updatedTodos);
-      setDones([...dones, completedTodo]);
-    }
+    dispatch({ type: "COMPLETE_TODO", payload: id });
   };
 
   const handleInComplete = (id: number) => {
-    const inCompletedTodo = dones.find((done) => done.id === id);
-    if (inCompletedTodo) {
-      const updatedDones = dones.filter((done) => done.id !== id);
-      inCompletedTodo.completed = false;
-      setDones(updatedDones);
-      setTodos([...todos, inCompletedTodo]);
-    }
+    dispatch({ type: "INCOMPLETE_TODO", payload: id });
   };
 
   const handleEdit = (id: number, newContent: string) => {
-    const updatedTodos = todos.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, content: newContent };
-      } else {
-        return todo;
-      }
-    });
-    setTodos(updatedTodos);
+    dispatch({ type: "EDIT_TODO", payload: { id, newContent } });
   };
   return (
     <div className="bg-neutral-50 w-1/2 h-full rounded mt-3 m-auto p-2">
