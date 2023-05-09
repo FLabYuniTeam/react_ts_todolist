@@ -7,11 +7,14 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^29.5.1",
+    "@types/lodash": "^4.14.194",
     "@types/node": "^18.16.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-script": "latest",
     "react-scripts": "5.0.1",
     "typescript": "^5.0.4",
     "web-vitals": "^2.1.0"
@@ -42,5 +45,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.1"
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }
